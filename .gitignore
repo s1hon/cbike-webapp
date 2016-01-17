@@ -1,3 +1,10 @@
+#JSX
+js/script
+
+# Sass
+css/
+.sass-cache
+
 # sketch design file
 *.sketch
 

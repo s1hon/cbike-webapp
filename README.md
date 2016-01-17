@@ -8,9 +8,14 @@
 - 使用[React.js](https://facebook.github.io/react/)作為主要編寫框架 (目前是規劃每3s會自動更新資料)
 - 直接把webapp放置在GithubPages (未來會直接綁定至cbike.seans.tw)
 
-## 目前進度
+## 使用方式
 
-2016/01/17：開啟Repo，準備設計網頁畫面&流程。
+```
+    $ npm install -g babel-cli gulp
+    $ npm install
+    $ (sudo) gem install sass
+    $ gulp
+```
 
 ## 授權方式
 
