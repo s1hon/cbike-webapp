@@ -1,0 +1,23 @@
+{
+  "name": "cbike-webapp",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "index.html",
+  "dependencies": {
+    "babel-preset-react": "^6.3.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opjlmi/cbike-webapp.git"
+  },
+  "author": "opjlmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opjlmi/cbike-webapp/issues"
+  },
+  "homepage": "https://github.com/opjlmi/cbike-webapp#readme"
+}
