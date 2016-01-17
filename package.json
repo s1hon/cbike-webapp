@@ -8,6 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "babel --presets react src --out-dir js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
