@@ -1,3 +1,6 @@
+# sketch design file
+*.sketch
+
 # Logs
 logs
 *.log
