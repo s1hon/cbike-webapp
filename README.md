@@ -17,15 +17,9 @@
     $ gulp
 ```
 
-## 自動部屬至gh-page
+## Access-Control-Allow-Origin 狀況
 
-```
-    $ gulp deploy
-```
-
-## Access-Control-Allow-Origin 解決辦法
-
-請安裝 [Chrome外掛](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) 解決。
+    請安裝 [Chrome外掛](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) 解決。
 
 ## 授權方式
 

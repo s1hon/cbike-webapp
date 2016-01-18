@@ -1,7 +1,3 @@
-# Auto-publish
-.publish/
-dist/
-
 # Sublime gulp
 .sublime-gulp.cache
 
