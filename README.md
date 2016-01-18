@@ -11,11 +11,15 @@
 ## 使用方式
 
 ```
-    $ npm install -g babel-cli gulp
+    $ npm install -g gulp
     $ npm install
     $ (sudo) gem install sass
     $ gulp
 ```
+
+## Access-Control-Allow-Origin 狀況
+
+    請安裝 [Chrome外掛](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) 解決。
 
 ## 授權方式
 

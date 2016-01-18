@@ -28,7 +28,7 @@ gulp.task('styles', function(){
 // Quick Server on port 8080
 gulp.task('server', function(done) {
   http.createServer(
-    st({ path: __dirname , index: 'index.html', cache: false })
+    st({ path: __dirname , index: 'index.html', cache: false, cors: true})
   ).listen(8080, done);
 });
 
