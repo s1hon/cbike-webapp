@@ -1,4 +1,7 @@
-#JSX
+# Sublime gulp
+.sublime-gulp.cache
+
+# JSX
 js/script
 
 # Sass
