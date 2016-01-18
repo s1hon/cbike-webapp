@@ -23,8 +23,6 @@ $("#map").click(function(){
 function initCbike() {
     
     var stations={};
-
-
     $.get("http://www.c-bike.com.tw/xml/stationlistopendata.aspx",function(result){
             var OriginalStations = x2js.xml_str2json(result);
             OriginalStations = OriginalStations.BIKEStationData.BIKEStation.Station;
@@ -46,8 +44,4 @@ function initCbike() {
             })
             // console.log(stations);
     })
-}
-
-function GetCbikePosition(){
-
 }
