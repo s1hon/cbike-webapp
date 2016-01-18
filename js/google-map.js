@@ -23,13 +23,15 @@ $("#map").click(function(){
 function initCbike() {
     
     var stations={};
-
-
-    $.get("http://www.c-bike.com.tw/xml/stationlistopendata.aspx",function(result){
-            var OriginalStations = x2js.xml_str2json(result);
+    var xhttp = new XMLHttpRequest();
+    
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            var OriginalStations = x2js.xml_str2json(xhttp.responseText);
             OriginalStations = OriginalStations.BIKEStationData.BIKEStation.Station;
 
-            $.each(OriginalStations,function( index, StationInfo){
+            for (var i=0; i < OriginalStations.length; i++){
+                StationInfo = OriginalStations[i];
                 var maker = new google.maps.Marker({
                     position: {lat: Number(StationInfo.StationLat), lng: Number(StationInfo.StationLon)},
                     map: map
@@ -42,12 +44,10 @@ function initCbike() {
                     "empty": Number(StationInfo.StationNums2),
                     "maker": maker
                 }
-
-            })
-            // console.log(stations);
-    })
-}
-
-function GetCbikePosition(){
+            }
+        }
+    };
+    xhttp.open("GET", "http://www.c-bike.com.tw/xml/stationlistopendata.aspx", true);
+    xhttp.send();
 
 }
