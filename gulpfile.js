@@ -3,7 +3,6 @@ var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
-var react = require('gulp-react');
 var http = require('http');
 var st = require('st');
 
@@ -22,17 +21,9 @@ gulp.task('styles', function(){
         })
         .pipe(autoprefixer('last 2 version'))
         .pipe(minifyCSS())
-        .pipe(gulp.dest('css'))
-        .pipe(livereload());
+        .pipe(gulp.dest('css'));
 });
 
-// React
-gulp.task('react',function(){
-    return gulp.src('src/*.js')
-        .pipe(react())
-        .pipe(gulp.dest('js/script'))
-        .pipe(livereload());
-})
 
 // Quick Server on port 8080
 gulp.task('server', function(done) {
@@ -44,9 +35,9 @@ gulp.task('server', function(done) {
 // Watch
 gulp.task('watch',['server'], function(){
         livereload.listen();
-        gulp.watch(['./scss/*.scss'],['styles']);
+        gulp.watch(['./scss/*.scss'],['styles','reload']);
         gulp.watch(['./*.html'],['reload']);
-        gulp.watch(['./js/*'],['react']);
+        gulp.watch(['./js/*'],['reload']);
 });
 
-gulp.task('default', ['react','styles','watch']);
+gulp.task('default', ['styles','watch']);

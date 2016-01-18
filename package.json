@@ -4,19 +4,17 @@
   "description": "一個想改進高雄Cbike手機APP使用者體驗的Cbike-webapp改進計畫。",
   "main": "index.html",
   "dependencies": {
-    "babel-preset-react": "^6.3.13"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-minify-css": "^1.2.3",
-    "gulp-react": "^3.1.0",
     "gulp-sass": "^2.1.1",
     "st": "^1.1.0"
   },
   "scripts": {
-    "start": "babel --presets react src --out-dir js",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
