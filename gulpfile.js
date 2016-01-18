@@ -5,6 +5,26 @@ var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
 var http = require('http');
 var st = require('st');
+var ghPages = require('gulp-gh-pages');
+
+// Auto deploy
+gulp.task('deploy', function() {
+    // Create deploy folder
+    gulp.src(['index.html'])
+        .pipe(gulp.dest('dist/'));
+    gulp.src(['js/**'])
+        .pipe(gulp.dest('dist/js'));
+    gulp.src(['css/**'])
+        .pipe(gulp.dest('dist/css'));
+
+    return gulp.src('dist/**/*')
+    .pipe(ghPages({options:{
+            push: false
+        }}));
+});
+
+gulp.task('d',['deploy'])
+
 
 // Livereload
 gulp.task('reload',function(){
