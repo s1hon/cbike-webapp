@@ -1,11 +1,7 @@
 # Sublime gulp
 .sublime-gulp.cache
 
-# JSX
-js/script
-
 # Sass
-css/
 .sass-cache
 
 # sketch design file
