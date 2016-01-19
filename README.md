@@ -6,7 +6,9 @@
 - 即時資料來源採用 [高雄市公共腳踏車即時租賃站資訊](http://data.kaohsiung.gov.tw/Opendata/DetailList.aspx?CaseNo1=AH&CaseNo2=6&Lang=C)
 - 使用[Google Maps API](https://developers.google.com/maps/?hl=zh-tw)作為主要地圖標示
 - <del>使用[React.js](https://facebook.github.io/react/)作為主要編寫框架 (目前是規劃每3s會自動更新資料)</del>
-- 直接把webapp放置在GithubPages (未來會直接綁定至cbike.seans.tw)
+- <del>直接把webapp放置在GithubPages (未來會直接綁定至cbike.seans.tw)<del>
+ps. 因為Access-Control-Allow-Origin的問題，所以最後使用Expressjs。
+
 
 ## 使用方式
 
