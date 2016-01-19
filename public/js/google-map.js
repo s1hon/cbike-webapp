@@ -23,11 +23,9 @@ $("#map").click(function(){
 function initCbike() {
     
     var stations={};
-    $.get("http://www.c-bike.com.tw/xml/stationlistopendata.aspx",function(result){
-            var OriginalStations = x2js.xml_str2json(result);
-            OriginalStations = OriginalStations.BIKEStationData.BIKEStation.Station;
+    $.getJSON("/getcbike/",function(result){
 
-            $.each(OriginalStations,function( index, StationInfo){
+            $.each(result,function( index, StationInfo){
                 var maker = new google.maps.Marker({
                     position: {lat: Number(StationInfo.StationLat), lng: Number(StationInfo.StationLon)},
                     map: map
@@ -42,6 +40,6 @@ function initCbike() {
                 }
 
             })
-            // console.log(stations);
+            
     })
 }
