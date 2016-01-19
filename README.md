@@ -17,9 +17,6 @@
     $ gulp
 ```
 
-## Access-Control-Allow-Origin 狀況
-
-    請安裝 [Chrome外掛](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) 解決。
 
 ## 授權方式
 
