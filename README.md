@@ -2,6 +2,8 @@
 
 有使用過c-bike 手機app的人應該有跟我一樣的感覺，就是整體動線非常差。所以開了這個repo來製作一個新的Webapp，來改進原本舊的App動線。如果有興趣的人歡迎加入開發 :)
 
+![This is Cbike-webapp demo][https://raw.githubusercontent.com/opjlmi/cbike-webapp/master/readme-img/main.png]
+
 ## 未來規劃
 - 即時資料來源採用 [高雄市公共腳踏車即時租賃站資訊](http://data.kaohsiung.gov.tw/Opendata/DetailList.aspx?CaseNo1=AH&CaseNo2=6&Lang=C)
 - 使用[Google Maps API](https://developers.google.com/maps/?hl=zh-tw)作為主要地圖標示
